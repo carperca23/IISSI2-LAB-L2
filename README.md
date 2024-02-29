@@ -1,1 +1,1 @@
-Backend for the photo gallery lab project. It includes all necessary SQL files, and a basic file structure for the web app.
+# Proyecto sobre el que trabajaremos en IISSI2
