@@ -32,8 +32,28 @@ function main() {
             date: "14/08/2019",
         },
     ];
+    
     let gallery = galleryRenderer.asCardGallery(photos);
     container.appendChild(gallery);
+
+    let cards = document.querySelectorAll("div.card");
+
+    for (let card of cards) {
+        card.onmouseenter = handleMouseEnter;
+        card.onmouseleave = handleMouseLeave;
+    }
+
 }
+
+function handleMouseEnter(event) {
+    let card = event.target;
+    card.style.border = "2px solid grey"
+}
+
+function handleMouseLeave(event) {
+    let card = event.target;
+    card.style.border = "none";
+}
+
 
 document.addEventListener("DOMContentLoaded", main);
