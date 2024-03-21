@@ -1,1 +1,2 @@
-# Proyecto sobre el que trabajaremos en IISSI2
+# LAB DE ISSI 2
+#  2023/24
