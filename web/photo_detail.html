@@ -11,11 +11,19 @@
     <script src="/js/libs/bootstrap.min.js"></script>
     <script src="/js/utils/include.js"></script>
     <script type="module" src="/js/photoDetail.js"></script>
+    <script src="js/libs/axios.min.js"></script>
     <title>Galería</title>
 </head>
 
 <body class="dark">
-    <div class="container">    
+    <div class="container">   
+        
+        <div id="errors"></div>
+        <div class="row">
+            <div class="col-md text-center">
+                <br>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-9" id="photo-details-column"></div>
             <div class="col-md text-center">
@@ -36,6 +44,11 @@
                     </form>
                 </div>
             
+        </div>
+        <div class="row">
+            <div class="col-md text-center">
+                <br>
+            </div>
         </div>
         <div class="row">
             <div class="col-md text-center">

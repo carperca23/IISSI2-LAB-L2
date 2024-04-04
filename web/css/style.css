@@ -16,9 +16,14 @@ img.photo-image {
   max-height: 200px;
   width: auto;
 }
-
+img.photo-user-avatar {
+  max-width: 25px;
+  height: auto;
+  border-radius: 50%;
+}
+  
 body.dark {
-  background-color: #222222;
+  background-color: #212529;
   color: #eeeeee;
 }
 .gallery-container {

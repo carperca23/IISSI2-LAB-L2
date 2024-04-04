@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <script src="/js/libs/bootstrap.min.js"></script>
     <script src="/js/utils/include.js"></script>
+    <script src="js/libs/axios.min.js"></script>
     <script type="module" src="/js/index.js"></script>
     <title>Galería</title>
 </head>
@@ -53,12 +54,15 @@
             </div>
         </nav>
 
+        <div id="errors"></div>
+
         <div class="row">
             <div class="col-md text-center">
                 <h2>Recent pictures</h2>
                 <hr>
             </div>
         </div>
+        
         <div id="gallery"></div>
     </div>
 </body>
