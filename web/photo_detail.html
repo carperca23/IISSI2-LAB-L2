@@ -13,6 +13,7 @@
     <script type="module" src="/js/photoDetail.js"></script>
     <script src="js/libs/axios.min.js"></script>
     <title>Galería</title>
+
 </head>
 
 <body class="dark">
@@ -27,8 +28,8 @@
         <div class="row">
             <div class="col-md-9" id="photo-details-column"></div>
             <div class="col-md text-center">
-                    <button class="btn btn-primary">Edit this photo</button>
-                    <button class="btn btn-danger">Delete this photo</button>
+                    <button id="button-edit" class="btn btn-primary">Edit this photo</button>
+                    <button id="button-delete" class="btn btn-danger">Delete this photo</button>
                     <form>
                         <div class="form-group">
                             <label for="rating-input">Rate this photo:</label>
