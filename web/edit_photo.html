@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <script src="/js/utils/include.js"></script>
-    <script src="/js/edit_photo.js"></script>
     <script src="js/libs/axios.min.js"></script>
-    <title>Edit photo</title>
+    <script type="module" src="/js/edit_photo.js"></script>
+    <title>New photo</title>
+
 </head>
 
 <body class = "dark">
@@ -53,7 +54,8 @@
                 </div>
             </div>
         </nav>
-
+    
+    <div id="errors"></div>
     <form id="form-photo-upload">
         <div class="form-group">
             <label for="input-url">URL:</label>
