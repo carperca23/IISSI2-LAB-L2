@@ -3,7 +3,7 @@ import { parseHTML } from "/js/utils/parseHTML.js";
 const photoRenderer = {
     asCard: function (photo) {
         let html = `<div class="col-md-4">
-        <div class="card bg-dark text-light">
+        <div class="card bg-dark text-light custom-card">
         <a href="photo_detail.html?photoId=${photo.photoId}">
         <img src="${photo.url}" class="card-img-top">
         </a>
