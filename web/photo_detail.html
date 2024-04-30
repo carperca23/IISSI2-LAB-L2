@@ -8,10 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <div id="page-header"></div>
     <script src="/js/libs/bootstrap.min.js"></script>
     <script src="/js/utils/include.js"></script>
     <script type="module" src="/js/photoDetail.js"></script>
     <script src="js/libs/axios.min.js"></script>
+    <script src="js/header.js" type="module"></script>
     <title>Galería</title>
 
 </head>
@@ -25,9 +27,9 @@
                 <br>
             </div>
         </div>
-        <div class="row">
+        <div class="row text-center">
             <div class="col-md-9" id="photo-details-column"></div>
-            <div class="col-md text-center">
+            <div class="col-md text-center" id="actions-col">
                     <button id="button-edit" class="btn btn-primary">Edit this photo</button>
                     <button id="button-delete" class="btn btn-danger">Delete this photo</button>
                     <form>
@@ -57,6 +59,11 @@
             </div>
         </div>
     </div>
+
+    <script>
+        include("cabecera.html", "#page-header")
+    </script>
+
 </body>
 
 </html>

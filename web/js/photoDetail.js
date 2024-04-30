@@ -2,6 +2,8 @@
 import { photoRenderer } from "/js/renderers/photos.js";
 import { photosAPI_auto } from "/js/api/_photos.js";
 import { messageRenderer } from "/js/renderers/messages.js";
+import { sessionManager } from "/js/utils/session.js";
+
 // Get the ID of the photo to load from the URL params
 let urlParams = new URLSearchParams(window.location.search);
 let photoId = urlParams.get("photoId");
@@ -13,6 +15,7 @@ async function main() {
         return;
     } 
     loadPhotoDetails();
+    hideActionsColumn();
 
     let deleteBtn =  document.querySelector("#button-delete");
     deleteBtn.onclick =  handleDelete;
@@ -51,4 +54,12 @@ async function loadPhotoDetails() {
         messageRenderer.showErrorMessage("Error loading photo", err);
     }
 }
+
+function hideActionsColumn() {
+    let actions_col = document.getElementById("actions-col");
+    if (!sessionManager.isLogged()) {
+        actions_col.style.display = "none";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", main);

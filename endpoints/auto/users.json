@@ -33,7 +33,7 @@
             "password",
             "avatarUrl"
         ],
-        "auth_required": true,
+        "auth_required": false,
         "allowed_roles": [
             "*"
         ]
@@ -52,7 +52,7 @@
             "password",
             "avatarUrl"
         ],
-        "auth_required": true,
+        "auth_required": false,
         "allowed_roles": [
             "*"
         ]
