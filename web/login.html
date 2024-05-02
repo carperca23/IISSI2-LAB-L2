@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div id="page-header"></div>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script type="module" src="/login.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/utils/include.js"></script>
+    <script src="js/libs/axios.min.js"></script>
+    <script src="js/header.js" type="module"></script>
+    <title>Login</title>
+</head>
+<body class="dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md text-center">
+                <h2>Login</h2>
+                <hr>
+            </div>
+        </div>
+        <div id="errors"></div>
+
+        <form id="login-form">
+            <div class="row">
+                <div class="col-md">
+                    <label for="username">Usuario:</label>
+                    <input class = "form-control bg-dark text-light" type="text" id="username" name="username">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md">
+                    <label for="password">Password:</label>
+                    <input class = "form-control bg-dark text-light" type="password" id="password" name="password">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md text-center">
+                    <button class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        include("cabecera.html", "#page-header")
+    </script>
+</body>
+</html>

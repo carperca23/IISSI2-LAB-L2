@@ -28,6 +28,7 @@ function handleSubmitRegister(event) {
         sendRegister(formData);
     }
     */
+    event.preventDefault();
     let form = event.target;
     let formData = new FormData(form);
     sendRegister(formData);
@@ -39,7 +40,7 @@ async function sendRegister(formData) {
         let sessionToken = loginData.sessionToken;
         let loggedUser = loginData.user;
         sessionManager.login(sessionToken, loggedUser);
-        window.location.href = `index.html`;
+        window.location.href = "index.html";
     } catch (err) {
         messageRenderer.showErrorMessage("Error registering a new user", err);
     }
